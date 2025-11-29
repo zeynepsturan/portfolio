@@ -10,6 +10,11 @@ import ProjectsIcon from '../components/icons/projects.png';
 import ContactIcon from '../components/icons/contact.png';
 import SkillsIcon from '../components/icons/skills.png';
 import bgImage from '../components/images/bg.png';
+import VisicalcImage from '../components/images/visicalc.png';
+import ArdunioImage from '../components/images/ardunio.png';
+import WebImage from '../components/images/website.png';
+import PyImage from '../components/images/pyed.png';
+import WordleImage from '../components/images/wordle.png';
 
 interface OpenWindow {
   id: string;
@@ -86,6 +91,7 @@ export function Desktop() {
         tech: ['C++'],
         github: 'https://github.com/zeynepsturan/VisiCalc-Terminal-Clone',
         demo: '#',
+        image: VisicalcImage,
         details:
           'Developed a terminal-based VisiCalc clone in modern C++ using object-oriented programming principles. Implemented core spreadsheet functionalities including cell editing, formula calculations, row and column operations, and file saving/loading. Optimized for performance on command-line interfaces, providing users with a classic spreadsheet experience while maintaining efficient memory usage and responsive interactions.',
       },
@@ -96,6 +102,7 @@ export function Desktop() {
         tech: ['C'],
         github: 'https://github.com/zeynepsturan/WORDLE-clone',
         demo: '#',
+        image: WordleImage,
         details:
           'Developed a terminal-based WORDLE clone in C, supporting both English and Turkish languages with full Turkish character support (ç, ğ, ş, ü, ö, ı). Implemented core game mechanics including word selection, guess validation, and color-coded feedback for correct and misplaced letters. Designed the game for an interactive command-line experience with intuitive input handling and efficient memory usage, providing players with a seamless and engaging puzzle challenge.',
       },
@@ -106,6 +113,7 @@ export function Desktop() {
         tech: ['Python', 'Github'],
         github: 'https://github.com/zeynepsturan/30-Days-Of-Python-TR',
         demo: '#',
+        image: PyImage,
         details:
           'Maintained a GitHub project translating the “30 Days of Python” series into Turkish, expanding learning resources and making Python education accessible to Turkishspeaking learners worldwide. Added context-relevant examples and explanations to enhance understanding and usability. Demonstrated skills in Python programming, technical writing, localization, and creating open-source educational content for the community.',
       },
@@ -115,6 +123,7 @@ export function Desktop() {
           'This is literally the website',
         tech: ['React', 'TypeScript', 'Tailwind CSS'],
         github: 'https://github.com/zeynepsturan/30-Days-Of-Python-TR',
+        image: WebImage,
         demo: '#',
         details:
           'Developed this website to show my portfolio in a fun and interactive way :)',
@@ -125,6 +134,7 @@ export function Desktop() {
           'Content management system for portfolio websites with drag-and-drop builder and customizable themes.',
         tech: ['C', 'Ardunio'],
         github: 'https://github.com/zeynepsturan/CSE101-TERM-PROJECT',
+        image: ArdunioImage,
         demo: '#',
         details:
           'Developed and integrated a memory game, "Recall The Matrix," for our group project using three Arduino Uno microcontrollers and an 8x8 Matrix display. Implemented core game mechanics: generating a temporary random number matrix for memorization and taking player input via a remote controller. Contributed to the full project lifecycle, including research, software development, hardware setup, report documentation , debugging, and final testing for various situations.',

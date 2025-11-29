@@ -1,11 +1,12 @@
 export function CVContent() {
   return (
     <div className="p-8 max-w-4xl mx-auto">
-      <div className="flex justify-end mb-4">
+      <div className="flex justify-end mb-4 items-center">
+        <h1 className="text-blue-600 mb-2">For more detail:</h1>
         <a
           href="src\components\documents\Zeynep_Sude_Turan_CV.pdf"
           download
-          className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition-colors flex items-center gap-2"
+          className="ml-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition-colors flex items-center gap-2"
         >
           Download CV
         </a>

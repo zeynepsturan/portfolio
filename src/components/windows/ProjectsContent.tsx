@@ -1,8 +1,8 @@
 import { ExternalLink, Github } from 'lucide-react';
+import projectsData from "Desktop.tsx"
 
 export function ProjectsContent() {
-  const projects = [
-  ];
+  const projects = Object.values(projectsData);
 
   return (
     <div className="p-8">

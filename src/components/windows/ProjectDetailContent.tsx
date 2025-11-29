@@ -8,6 +8,7 @@ interface ProjectDetailContentProps {
     github: string;
     demo: string;
     details: string;
+    image?: string;
   };
 }
 
@@ -42,30 +43,23 @@ export function ProjectDetailContent({ project }: ProjectDetailContentProps) {
           <p className="text-gray-700">{project.details}</p>
         </div>
 
-        <div className="bg-gray-50 p-6 rounded-lg">
-          <h2 className="text-gray-800 mb-4">Key Features</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
-            <li>Responsive design optimized for all devices</li>
-            <li>Modern and intuitive user interface</li>
-            <li>High performance and optimized code</li>
-            <li>Comprehensive testing and documentation</li>
-          </ul>
-        </div>
+        {project.image && (
+          <div className="mb-6">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-80% rounded-lg shadow-md"
+            />
+          </div>
+        )}
 
         <div className="flex gap-4 pt-4">
           <a 
-            href={project.github}
+            href={project.github} target="_blank" rel="noopener noreferrer"
             className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 rounded transition-colors"
           >
             <Github className="w-5 h-5" />
-            <span>View Code</span>
-          </a>
-          <a 
-            href={project.demo}
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded transition-colors"
-          >
-            <ExternalLink className="w-5 h-5" />
-            <span>Live Demo</span>
+            <span>View GitHub</span>
           </a>
         </div>
       </div>
