@@ -1,0 +1,23 @@
+:root {
+  color-scheme: dark;
+  --app-bg: #08131d;
+  --app-panel: rgba(15, 23, 42, 0.72);
+  --app-border: rgba(148, 163, 184, 0.22);
+  --app-text: #eaf3ff;
+  --app-muted: #b7c5d8;
+  --app-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+html {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+body {
+  background: var(--app-bg);
+  color: var(--app-text);
+}
+
+#root {
+  min-height: 100vh;
+}
